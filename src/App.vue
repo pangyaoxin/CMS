@@ -1,32 +1,66 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <header>
+      <home-header></home-header>
+    </header>
+    <main>
+      <router-view></router-view>
+      <section>
+        <home-section></home-section>
+      </section>
+      <footer>
+      <home-footer></home-footer>
+    </footer>
+    </main>
+    <div class="returnTop">
+      <return-top></return-top>
+    </div>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// 引入组件
+import HomeHeader from "./components/HomeHeader.vue"
+import HomeSection from "./components/HomeSection.vue"
+import HomeFooter from "./components/HomeFooter.vue"
+import ReturnTop from "./components/ReturnTop.vue"
 
-nav {
-  padding: 30px;
-}
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+export default {
+  name:"app",
+  components:{
+    HomeHeader,
+    HomeSection,
+    HomeFooter,
+    ReturnTop,
 }
+}
+</script>
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+<style scoped>
+  main{
+    width: 1260px;
+    margin: auto;
+    margin-top: 15px;
+    position: relative;
+  }
+  section{
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  footer{
+    position: absolute;
+    top: 510px;
+    right: 0;
+  }
+  .returnTop{
+    width: 42px;
+    height: 172px;
+    position: sticky;
+    left: 85%;
+    bottom: 75px;
+    z-index: 10;
+  }
 </style>
