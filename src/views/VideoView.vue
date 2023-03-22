@@ -1,20 +1,29 @@
 <template>
+  <div>
     <div class="video">
-        <learning-manual-tag></learning-manual-tag>
-        <more-content></more-content>
+      <content-display-book-type-3>观看</content-display-book-type-3>
+      <content-display-book-type-3>观看</content-display-book-type-3>
+      <content-display-book-type-3>观看</content-display-book-type-3>
+      <content-display-book-type-3>观看</content-display-book-type-3>
+      <content-display-book-type-3>观看</content-display-book-type-3>
     </div>
+      <more-content></more-content>
+  </div>
 </template>
 <script>
-import LearningManualTag from "../components/LearningManualTag.vue"
+import ContentDisplayBookType3 from "../components/ContentDisplayBookType3.vue"
 import MoreContent from "../components/MoreContent.vue"
 
 export default {
   name: 'VideoView',
   components: {
-    LearningManualTag,
+    ContentDisplayBookType3,
     MoreContent,
   }
 }
 </script>
 <style scoped>
+.video{
+  margin-bottom: 10px;
+}
 </style>

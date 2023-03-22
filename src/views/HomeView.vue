@@ -1,20 +1,30 @@
 <template>
   <div class="home">
-    <selected-content></selected-content>
-    <selected-content></selected-content>
-    <selected-content></selected-content>
+    <view-more>精选手册</view-more>
+    <content-display-book>阅读</content-display-book>
+    <content-display-book>阅读</content-display-book>
+    <view-more>精选博客</view-more>
+    <content-display-blog></content-display-blog>
+    <content-display-blog></content-display-blog>
+    <view-more>精选视频</view-more>
+    <content-display-book>观看</content-display-book>
+    <content-display-book>观看</content-display-book>
     <more-content></more-content>
   </div>
 </template>
 
 <script>
-import SelectedContent from "../components/SelectedContent.vue"
+import ViewMore from "../components/ViewMore.vue"
+import ContentDisplayBook from "../components/ContentDisplayBook.vue"
+import ContentDisplayBlog from "../components/ContentDisplayBlog.vue"
 import MoreContent from "../components/MoreContent.vue"
 
 export default {
   name: 'HomeView',
   components: {
-    SelectedContent,
+    ViewMore,
+    ContentDisplayBook,
+    ContentDisplayBlog,
     MoreContent
   }
 }

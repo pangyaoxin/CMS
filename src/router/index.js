@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import BookView from '../views/BookView.vue'
 import BlogView from '../views/BlogView.vue'
 import VideoView from '../views/VideoView.vue'
+import ResourcesView from '../views/ResourcesView.vue'
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,11 @@ const routes = [
     path: '/video',
     name: 'video',
     component: VideoView
+  },
+  {
+    path: '/resources',
+    name: 'resources',
+    component: ResourcesView
   }
 ]
 
