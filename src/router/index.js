@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import BookView from '../views/BookView.vue'
 import BlogView from '../views/BlogView.vue'
+import VideoView from '../views/VideoView.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,11 @@ const routes = [
     path: '/blog',
     name: 'blog',
     component: BlogView
+  },
+  {
+    path: '/video',
+    name: 'video',
+    component: VideoView
   }
 ]
 

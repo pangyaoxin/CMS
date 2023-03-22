@@ -1,5 +1,7 @@
 <template>
-        <button>阅读</button>
+        <button>
+            <slot></slot>
+        </button>
 </template>
 
 <script></script>

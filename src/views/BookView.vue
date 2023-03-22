@@ -1,13 +1,12 @@
-
-import LearningManual from '@/components/LearningManual.vue';
-
 <template>
-  <div class="book">
-    <learning-manual></learning-manual>
-    <learning-manual></learning-manual>
-    <learning-manual></learning-manual>
-    <learning-manual></learning-manual>
-    <learning-manual></learning-manual>
+  <div>
+    <div class="book">
+      <learning-manual></learning-manual>
+      <learning-manual></learning-manual>
+      <learning-manual></learning-manual>
+      <learning-manual></learning-manual>
+      <learning-manual></learning-manual>
+    </div>
     <more-content></more-content>
   </div>
 </template>
@@ -25,6 +24,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+  .book{
+    width: 955px;
+    background-color: white;
+  }
 </style>

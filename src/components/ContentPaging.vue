@@ -1,3 +1,4 @@
+<!-- 分页组件 -->
 <template>
     <div class="contentPaging">
         <el-pagination background :pager-count="4" layout="prev, pager, next" :total="100"
